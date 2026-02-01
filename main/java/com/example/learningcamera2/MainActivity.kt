@@ -43,7 +43,6 @@ class MainActivity : ComponentActivity() {
         val openCameraButton = findViewById<Button>(R.id.open)
 
         openCameraButton.setOnClickListener @androidx.annotation.RequiresPermission(android.Manifest.permission.CAMERA) { v -> if (permissionGranted) openCamera() }
-        /*
         textureView.surfaceTextureListener = object: TextureView.SurfaceTextureListener {
             @RequiresPermission(Manifest.permission.CAMERA)
             override fun onSurfaceTextureAvailable(
@@ -71,7 +70,6 @@ class MainActivity : ComponentActivity() {
                 TODO("Not yet implemented")
             }
         }
-         */
     }
 
     override fun onDestroy() {
